@@ -4,7 +4,7 @@ SetDoor is a Simple PHP backdoor injector coded using Python to add a hidden fil
 
 Installation :: (On Termux) 
 * Clone the repository using "git clone https://github.com/ShinazBinShajahan/SetDoor"
-* Then cd "SetDoor"
+* Then "cd SetDoor"
 * Install some modules if required , using "pip install -r requirements.txt"
 * And then "Python SetDoor.py"
 * Done ! 
