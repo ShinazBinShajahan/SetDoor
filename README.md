@@ -12,8 +12,8 @@ Installation :: (On Termux)
 
 Usage :: 
 
-*After injecting the backdoor into your phone file , upload the php file to a server and add "?setdoor" to the URL ,
-EXAMPLE : https://yoursite.com/yourfile.php?Set door
+*After injecting the backdoor into your php file , upload the php file to a server and add "?setdoor" to the URL ,
+EXAMPLE : https://yoursite.com/yourfile.php?setdoor
 
 DISCLAIMER ::
 
