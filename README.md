@@ -1,14 +1,13 @@
 # SetDoor -A simple PHP backdoorinjector
 
-SetDoor is a Simple PHP backdoor injector coded using Python to add a hidden file uploader/backdoor into a .php file
+SetDoor is a Simple PHP backdoor injector coded using Bash and Python to add a hidden file uploader/backdoor into a .php file
 
 Installation :: (On Termux) 
-* Clone the repository using "git clone https://github.com/ShinazBinShajahan/SetDoor"
+* Clone the repository using "git clone https://github.com/ShinazBinShajahan/SetDoor.git"
 * Then "cd SetDoor"
-* Install some modules if required , using "pip install -r requirements.txt"
-* And then "Python SetDoor.py"
+* And then "bash SetDoor.sh"
 * Done ! 
-* Now just enter the Name of your php file with .php extension
+* Now just enter the Name of your folder with php file and your file's name with .php extension
 
 Usage :: 
 
